@@ -1,23 +1,58 @@
-# Meeting.ai for Antigravity
+<p align="center">
+  <a href="https://meeting.ai" target="_blank" rel="noopener noreferrer">
+    <img width="64" src="assets/logo.png" alt="Meeting.ai logo">
+  </a>
+</p>
+<h1 align="center">
+  Meeting.ai for Antigravity
+</h1>
+<h3 align="center">
+  Bring your meetings into Antigravity
+</h3>
+<p align="center">
+  Meeting.ai takes the notes in every meeting, in person or on Zoom, Google Meet, and Microsoft Teams.<br/>
+  Antigravity builds from what was said.
+</p>
 
-Meeting.ai takes the notes in every meeting, in person or on Zoom, Google Meet, and Microsoft
-Teams. Antigravity builds from what was said.
+## Overview
 
-## From a meeting to your work
+The Meeting.ai plugin connects Antigravity to your Meeting.ai account. Find what was decided,
+read notes and transcripts, and turn a meeting into a plan, a task list, or code, without
+leaving your project.
 
-> "Read my last planning meeting and draft the implementation plan for this project."
+The plugin uses [Meeting.ai's hosted MCP server](https://meeting.ai/en/docs/developers/connect-meeting-ai).
+Sign in with your Meeting.ai account to get started. No API key or local server is required.
 
-> "We agreed to change the retry limit to 5. Find where we decided that, and make the change."
+## Quick start
 
-> "Make a task list from the action items of today's standup, with the owners."
+### 1. Install from the marketplace
 
-## Before and during a meeting
+Open **Customizations → Marketplace** in Antigravity, find **Meeting.ai**, and click **Add**.
 
-> "Before the sync, find what we decided about this feature in my past meetings."
+### 2. Connect your Meeting.ai account
 
-> "Send the Meeting.ai notetaker to my Google Meet and take notes."
+**Installing the plugin is the first step. Connect your account before using Meeting.ai tools.**
 
-> "Turn the design review into a one-page Visual Note that I can share."
+1. Open **Customizations → Installed** and open **Meeting.ai**.
+2. Open the **Accounts** tab and click **Sign in**.
+3. Sign in to Meeting.ai in your browser and click **Allow access**.
+
+Antigravity then shows the account as **Connected**. If you do not have a Meeting.ai account
+yet, you can start free at [meeting.ai](https://meeting.ai).
+
+### 3. Try it out
+
+Ask Antigravity:
+
+> Summarize the decisions and action items from my last meeting.
+
+Once Antigravity retrieves your meeting from Meeting.ai, you're connected. You can also try:
+
+- Read my last planning meeting and draft the implementation plan for this project.
+- We agreed to change the retry limit to 5. Find where we decided that, and make the change.
+- Before the sync, find what we decided about this feature in my past meetings.
+- Send the Meeting.ai notetaker to my Google Meet and take notes.
+- Turn the design review into a one-page Visual Note that I can share.
 
 ## What it can reach
 
@@ -27,30 +62,6 @@ Teams. Antigravity builds from what was said.
   workspaces.
 - It writes only when you ask it to. You can end the connection at any time in Meeting.ai,
   under **Settings › MCP & CLI**.
-
-## How to start
-
-1. Add the plugin. In the Antigravity App, open **Customizations › Marketplace**, find
-   **Meeting.ai**, and click **Add**. In the Antigravity CLI, run
-   `agy plugin install meeting-ai@antigravity-plugins-partners`.
-2. Sign in. The first time Antigravity uses a Meeting.ai tool, your browser opens the
-   Meeting.ai sign-in page. Sign in and click **Allow access**. There is no API key to paste.
-3. Ask in plain words.
-
-You need a Meeting.ai account. You can start free at [meeting.ai](https://meeting.ai).
-
-## What is in this plugin
-
-| Part | What it does |
-|---|---|
-| MCP server `meeting-ai` | Connects Antigravity to the hosted Meeting.ai server, `https://mcp.meeting.ai/mcp`. |
-| Skill `meeting-ai-overview` | How to read meetings, notes, transcripts and action items, recap several meetings, and use exports, sharing, tags, contacts, Drive and workspaces. |
-| Skill `meeting-ai-setup` | How to turn on the plugin, sign in, check that the connection works, and fix sign-in problems. |
-| Skill `meeting-ai-record-meeting` | How to send the notetaker to a Zoom, Google Meet or Microsoft Teams call, transcribe a recording, follow the progress, and stop a recording. |
-| Skill `meeting-ai-edit-notes` | How to rewrite or restructure the notes of a meeting and rename it. Only the meeting owner can edit. |
-| Skill `meeting-ai-visual-notes` | How to make a Visual Note, a one-page summary image, from one meeting, several meetings, or any text. |
-
-The plugin is configuration and instructions only. It has no code, no binary, and no hooks.
 
 ## Before you install
 
@@ -69,6 +80,24 @@ The plugin is configuration and instructions only. It has no code, no binary, an
 - **The notetaker is visible.** It joins a live call as a participant named Meeting.ai.
 - **A share link is public.** It shows the notes and, by default, the transcript. It has a PIN
   by default.
+
+## Troubleshooting
+
+### Installed, but Meeting.ai tools are unavailable
+
+Check that the plugin is enabled, then open its **Accounts** tab and sign in. Installation does
+not sign you in automatically. Start a new conversation after you sign in.
+
+### A tool says that you are out of Coins
+
+Nothing is wrong with the connection. Recording, Visual Notes, and image and audio generation
+use Meeting.ai Coins. See [Coins and billing](https://meeting.ai/en/docs/billing/coins-and-billing).
+
+### The connection stopped working
+
+Open the plugin's **Accounts** tab, sign out, and sign in again. For more help, see
+[Connect Meeting.ai through MCP](https://meeting.ai/en/docs/developers/connect-meeting-ai) or
+write to support@meeting.ai.
 
 ## Links
 
