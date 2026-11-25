@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "meeting-ai": {
-      "url": "https://mcp.meeting.ai/mcp"
+      "serverUrl": "https://mcp.meeting.ai/mcp"
     }
   }
 }

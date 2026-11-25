@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "meeting-ai",
   "displayName": "Meeting.ai",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Meeting.ai takes the notes in every meeting, in person or on Zoom, Google Meet, and Teams. Antigravity builds from what was said.",
   "logo": "assets/logo.png",
   "suggestedPrompts": [
