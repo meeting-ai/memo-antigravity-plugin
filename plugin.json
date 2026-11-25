@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "meeting-ai",
+  "displayName": "Meeting.ai",
+  "version": "1.0.0",
+  "description": "Meeting.ai takes the notes in every meeting, in person or on Zoom, Google Meet, and Teams. Antigravity builds from what was said.",
+  "logo": "assets/logo.png",
+  "suggestedPrompts": [
+    "Read my last planning meeting and draft the implementation plan for this project",
+    "Before the sync, find what we decided about this feature in my past meetings",
+    "Make a task list from the action items of my last meeting, with the owners"
+  ],
+  "author": {
+    "name": "Meeting.ai",
+    "url": "https://meeting.ai"
+  },
+  "homepage": "https://meeting.ai/en/docs/developers/connect-meeting-ai",
+  "repository": "https://github.com/meeting-ai/memo-antigravity-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "meetings",
+    "meeting-notes",
+    "transcripts",
+    "notetaker",
+    "action-items",
+    "visual-notes",
+    "productivity"
+  ]
+}
