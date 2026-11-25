@@ -77,15 +77,18 @@ Once Antigravity retrieves your meeting from Meeting.ai, you're connected. You c
   on your Meeting.ai account, with your own role in each workspace.
 - **Some actions use Coins.** Recording, Visual Notes, and image and audio generation use your
   Meeting.ai Coins, the usage credits that come with a Meeting.ai plan or a Coin pack. If your
-  account has no Coins, the tool stops with a clear message. An export costs no Coins and saves
-  a file to your Meeting.ai Drive.
+  account has no Coins, the tool stops with a clear message. An export uses no Coins and saves
+  a file to your Meeting.ai Drive, where it counts toward your storage. Editing notes can
+  redraw the Visual Note, which uses Coins. The plugin's skills turn this off unless you ask
+  for it.
 - **A long generation can continue after the agent's reply.** It can be charged, and Meeting.ai
   saves the file to your Drive when it is ready.
 - **Generation uses third-party AI providers.** Visual Note, image and audio generation send
   the text you supply to them.
 - **Meeting.ai records each tool call** (tool, outcome, and user, workspace and client
   identifiers) for product analytics. The plugin itself sends no telemetry.
-- **The notetaker is visible.** It joins a live call as a participant named Meeting.ai.
+- **The notetaker is visible.** It joins a live call as a participant named after you, for
+  example "Alex's Meeting.AI".
 - **A share link is public.** It shows the notes and, by default, the transcript. It has a PIN
   by default.
 

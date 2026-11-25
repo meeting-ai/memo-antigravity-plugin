@@ -28,7 +28,7 @@ Works for Zoom, Google Meet, and Microsoft Teams.
 2. Call `meetings_create` with `meeting_url`. Add `language` (for example `en` or `id`) only
    when the user says which language the meeting is in; otherwise leave it to auto-detect.
 3. Tell the user: the notetaker is joining, it appears in the call as a participant named
-   Meeting.ai, and the host may need to admit it from the waiting room.
+   after them, for example "Alex's Meeting.AI", and the host may need to admit it from the waiting room.
 4. The tool returns a `meeting_id` right away. Notes are written while the meeting runs and
    finished a few minutes after it ends.
 
