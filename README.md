@@ -29,6 +29,14 @@ Sign in with your Meeting.ai account to get started. No API key or local server 
 
 Open **Customizations → Marketplace** in Antigravity, find **Meeting.ai**, and click **Add**.
 
+#### Alternative way to install
+
+Install the plugin from this repository with the Antigravity CLI:
+
+```bash
+agy plugin install https://github.com/meeting-ai/memo-antigravity-plugin
+```
+
 ### 2. Connect your Meeting.ai account
 
 **Installing the plugin is the first step. Connect your account before using Meeting.ai tools.**
